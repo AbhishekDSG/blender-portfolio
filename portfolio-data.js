@@ -2,31 +2,30 @@
 
 const heroData = {
     title: "Your Website Title",
-    // Replace with your actual YouTube Video ID
-    youtubeVideoId: "70WDYkXrD44" // Example: A silent, looping-friendly video
+    heroImageSrc: "pic1.png" // Use one of your best renders here
 };
 
 const galleryData = [
     {
         type: 'video',
         size: 'wide',
-        src: 'Anim2.mp4', 
-        thumb: 'Anim2.mp4',
-        desc: 'This is an animation hosted on YouTube. Click to view!',
+        src: 'F1.mp4', 
+        thumb: 'thumbnail1.png',
+        desc: 'A star Wars animation I made for my student society',
     },
     // ... (rest of your gallery data remains the same)
     {
-        type: 'image',
+        type: 'video',
         size: '',
-        src: 'https://placehold.co/1920x1080/555/FFF?text=Render+2',
-        thumb: 'https://placehold.co/600x400/555/FFF?text=Render+2',
+        src: 'Anim1.mp4',
+        thumb: 'swars1.png',
         desc: 'A detailed static render of a futuristic device.'
     },
     {
         type: 'image',
         size: '',
-        src: 'https://placehold.co/1920x1080/444/FFF?text=Render+3',
-        thumb: 'https://placehold.co/600x400/444/FFF?text=Render+3',
+        src: 'castle.png',
+        thumb: 'castle.png',
         desc: 'This character model was a study in hard-surface modeling techniques.'
     },
     {
@@ -34,13 +33,13 @@ const galleryData = [
         size: 'tall',
         src: 'pic3.png',
         thumb: 'pic3.png',
-        desc: 'An architectural visualization concept for a modern cabin.'
+        desc: 'An atmospheric render of a car in a rainy environment'
     },
     {
         type: 'image',
         size: 'wide',
-        src: 'https://placehold.co/1920x1080/777/FFF?text=Render+5',
-        thumb: 'https://placehold.co/600x400/777/FFF?text=Render+5',
+        src: 'kunai.jpeg',
+        thumb: 'kunai.jpeg',
         desc: 'A wide landscape render focusing on atmosphere.'
     }
 ];

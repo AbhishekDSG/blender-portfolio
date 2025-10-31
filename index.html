@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Demo v14 (Fixed)</title>
+    <title>Portfolio Demo v15 (Portrait Fix)</title>
     <style>
         /* All CSS remains the same */
         body { background-color: #000; color: #f0f0f0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; margin: 0; overflow-x: hidden; }
@@ -28,7 +28,24 @@
         .gallery-item:hover video { opacity: 1; }
         .modal { display: none; position: fixed; z-index: 101; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8); backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px); animation: fadeIn 0.3s ease; }
         .modal-content { display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%; padding: 20px; box-sizing: border-box; }
-        .modal img, .modal video, .modal iframe { max-width: 90%; max-height: 80vh; border-radius: 8px; margin-bottom: 20px; aspect-ratio: 16/9; }
+        
+        /* --- THIS IS THE FIX --- */
+        /* Shared properties for all media types in modal */
+        .modal img, .modal video, .modal iframe {
+            max-width: 90%;
+            max-height: 80vh;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            /* The bad aspect-ratio rule was REMOVED from here */
+        }
+        
+        /* ONLY the iframe gets the forced aspect ratio */
+        .modal iframe {
+            aspect-ratio: 16/9;
+            width: 90%; /* Give it a width to base the ratio on */
+        }
+        /* --- END OF FIX --- */
+
         .modal-description { color: #ccc; font-size: 1.1em; max-width: 600px; text-align: center; line-height: 1.6; }
         .close-button { position: absolute; top: 20px; right: 35px; color: #f1f1f1; font-size: 40px; font-weight: bold; cursor: pointer; }
         .contact-footer { position: sticky; bottom: 0; left: 0; width: 100%; z-index: 10; padding: 20px 40px; box-sizing: border-box; margin-top: 80px; text-align: center; color: #aaa; background-color: rgba(28, 28, 30, 0.7); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
