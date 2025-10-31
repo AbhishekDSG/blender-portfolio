@@ -36,10 +36,10 @@ const galleryData = [
         desc: 'An atmospheric render of a car in a rainy environment'
     },
     {
-        type: 'image',
+        type: 'video',
         size: 'wide',
-        src: 'kunai.jpeg',
-        thumb: 'kunai.jpeg',
+        src: 'Anim2.mp4',
+        thumb: 'Anim2.png',
         desc: 'A wide landscape render focusing on atmosphere.'
     }
 ];
