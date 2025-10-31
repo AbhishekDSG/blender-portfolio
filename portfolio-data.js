@@ -1,7 +1,7 @@
 // portfolio-data.js
 
 const heroData = {
-    title: "Your Website Title",
+    title: "Blends by Abhishek",
     heroImageSrc: "pic1.png" // Use one of your best renders here
 };
 
